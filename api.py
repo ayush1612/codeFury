@@ -11,62 +11,63 @@ app = Flask(__name__)
 def index():
     return "Hello world"
 
-@app.route('/reviews_ml',methods=['POST'])
-def reviews():
+@app.route('/ml',methods=['GET'])
+def reviewsMl():
     gotData = request.json
     course = gotData['course']
 
     if(course == 'course1'):
-        data = { 'reviews':,
-            'name':''
+        data = { 'reviews':['Great start to Machine Learning! I would have liked it more if it had explained more Math behind the ML models.', 'I personally feel that instructors know what you are going to face in real life what challenges you will face while working on any machine learning project , though udemy asked me to rate course very early and promoted multiple times in middle but i waited as i was enjoying course a lot and wanted to learn first and didnt want to leave a halfhearted rating i personally feeling reading references and links are very helpful , and this is a top-notch course to start .', 'Amazing! This course helped me to implement a personal project, but i have two suggestions:I would like to see the same algorithms implemented with more complex data.2° "How to get the dataset" shouldnt show up every session.', 'Could be better, content not that good', 'Not satisfied with the course content'],
+            'name':'Machine Learning A-Z™: Hands-On Python & R In Data Science'
         }
     elif (course == 'course2'):
-        data = { 'reviews':[,
-            'name':''
+        data = { 'reviews':[ 'Very good course for beginners but should spend enough time on other topics to get familiar with all libraries and models. This course also needs to be updated with latest versions , libraries and models', 'Excellent course that teaches the fundamental skills with Python and Data Science! Recommend for people trying to learn python without much prior experience. The program is complete with open ended projects that allow you to develop in the future.', 'Jose knocks it out of the park again! My only criticism is There really needs to be more fundamental overview for math and data science to better grasp this stuff.', 'Not that good', 'It doesnt focus on beginners, its high level'],
+            'name':'Python for Data Science and Machine Learning Bootcamp'
         }
-    else:    
-        data = { 'reviews':,
-            'name':''
+    elif(course == 'course3'):    
+        data = { 'reviews':[ 'Very good practical knowledge and intuitional explanations. It would be perfect to include some theoritical explanations too.', 'Good one. Actually covered almost all theorem with theory and its practical examples.Good to start especially for someone who dont know anything about ML.', 'Poor buffering speed', 'Unsatisfactory', 'Not much projects done'],
+            'name':'Python for Data Science and Machine Learning Bootcamp'
         }
     
-    return data
+    return jsonify(data)
 
 
 
-@app.route('/reviews_android',methods=['POST'])
-def reviews():
+@app.route('/android',methods=['GET'])
+def reviewsAnd():
     gotData = request.json
     course = gotData['course']
     if(course == 'course1'):
-        data = { 'reviews':,
-            'name':''
+        data = { 'reviews':
+            ['overall course is very good .All concept are taught properly.','Great start for Android, however, the code is a it out of date. Overall is good. Thanks!','Rob is an amazing teacher.','Explanation of the code was really best to me but It is not complete course, as there are many things left','Its better if the instructor add some video on android pie so that student can use this knowledge the latest version of android studio','This course is right for me.','Very very repetitive and a lot of java bad practices','The course was good for an introductory level, but not complete as it said in its title as the "complete android developer" course',"Not a good course","The course is good as whole."],
+            'name':'theCompleteAndroidNDeveloperCourse'
         }
     elif (course == 'course2'):
-        data = { 'reviews':,
-            'name':''
+        data = { 'reviews':['This course works well','Its awesome','Not a great course','works bad','getting bored lately'],
+            'name':'androidJavaMasterClass'
         }
-    else:    
-        data = { 'reviews':,
-            'name':''
+    elif(course == 'course3'):    
+        data = { 'reviews':['Unfortunately I and a few others have gotten a point in this course where a big issue arises in one of the apps and the instructor no longer responds to questions to aid with this issue','The updated/ newer versions of android studio or other services should be used in the tutorials and possible errors and their solutions should be mentioned in the same.','Overall good course. I would prefer if it was going deeper into Android Studio and Development,but good insight was provided into marketing and launching the app and all the tricks.','I enjoyed the experience of learning both android programming and thinking programmatically from you guys','This course is amazingly immersive and quite all-inclusive from end-to-end to develop an app!'],
+            'name':'androidOnJava'
         }
     
 
-    return data
+    return jsonify(data)
 
 
 
-@app.route('/reviews_web',methods=['POST'])
-def reviews():
+@app.route('/web',methods=['GET'])
+def reviewsWeb():
     gotData = request.json
     course = gotData['course']
 
     if(course == 'course1'):
         data = { 'reviews':[
-            "Yeah! I was fairly new to the world of Web Development, but Colt taught a lot and very well also. Ian and Zarko were also very helpful and saved me a lot of time . Thanks for making such an informative course. Thanks a lot!",
-            "Wonderful course! Colt is an awesome teacher! He is very clear and detailed and his examples are spot on. This is actually one of the best of the courses I've taken on Udemy so far and Colt is definitely the best teacher. I like that his assistants answer questions in a timely manner. The only thing I find a little unfortunate about this course is that the JavaScript section only has JavaScript basics, I would have liked it if it was extended to an intermediate level and updated to ES6. But all in all its a great course. Great job Colt!",
+            "Yeah! I was fairly new to the world of Web Development, but Colt taught a lot and very well also. Ian and Zarko were also very helpful and saved me a lot of time",
+              "Wonderful course! Colt is an awesome teacher! He is very clear and detailed and his examples are spot on. This is actually one of the best of the courses I've taken on Udemy so far and Colt is definitely the best teacher. I like that his assistants answer questions in a timely manner. The only thing I find a little unfortunate about this course is that the JavaScript section only has JavaScript basics, I would have liked it if it was extended to an intermediate level and updated to ES6. But all in all its a great course. Great job Colt!",
             "Even thou English is not my native language, that wasn´t an impediment for me to learn these wonderful skils, ´cause the way the instructor designed the course, and explain it´s topics. I really encorage you to add this course and the skills that offers to your life!",
-            "What frustrated me was all of the notes. It seems like a lot of these videos needed to be updated because of changes to languages, libraries, APIs', hell even the terminal(s) changed to VScode. I understand that technology will continue to change and that means you will need to make updates and notes are an inexpensive way of doing that but it just comes off as cheap and lazy. I paid money for this I expect it to run smoothly and not link me all over the place to comments of people who ALSO paid for the course and had to come up wit their own solution to a problem that should have been discussed in one of the videos, All that being said, this course answered a lot of questions I had when I was attempting to build my first JavaScript project earlier this year. Who knew a website required so many moving parts ( libraries, API's etc...) . I cannot stress enough how helpful the JavaScript the hard parts section was in understanding __proto__ property and closures."
             "This course is amazing. just don't give up and go on with it. Colt is an amazing teacher and he will teach you an amazing things as time passes."
+            "okay course Liked some parts, did not liked other"
             ],
             'name':'the-web-developer-bootcamp'
         }
@@ -80,7 +81,7 @@ def reviews():
             ],
             'name':'front-end-web-development'
         }
-    else:    
+    elif(course == 'course3'):    
         data = { 'reviews':[
                 "Has mostly been a good review up to this point with a few new techniques that are very exciting. But now as I get to the more advanced tutorials, js, PHP, etc learning much more.",
                 "I love this course and Brad is a very experienced and easy to follow instruc,tor :) This course teaches all the building blocks of web development. It's highly recommended",
@@ -90,28 +91,31 @@ def reviews():
             ],
             'name':'web-developer-course'
         }
-    return data
+    return jsonify(data)
 
 
-@app.route('/reviews_ds',methods=['POST'])
-def reviews():
+@app.route('/ds',methods=['POST'])
+def reviewsDs():
     gotData = request.json
     course = gotData['course']
     if(course == 'course1'):
-        data = { 'reviews':,
-            'name':''
+        data = { 'reviews':['Very good course for beginners but should spend enough time on other topics to get familiar with all libraries and models. This course also needs to be updated with latest versions , libraries and models','The course was really great and provided good insights to python libraries. Few topics were covered in haste just for the sake of completing the course.','Not bad for complete entry level. Not a lot of theory and background math. But good for learning all the python tools' 'not satisfied', 'Just completed the course and I can confidently say that it is a great introduction to Data Science. Kirill puts a lot of order into chaos, while still leaving the students open to find individual and independent solutions. Daniel is also a great Q&A moderator. Great team, great course!'],
+            'name':'Complete DataScience with Python and Tensorflow'
         }
     elif (course == 'course2'):
-        data = { 'reviews':,
-            'name':''
+        data = { 'reviews':['This is an amazing course, Kirill did a nice job here, especially the data preparation part, its very comprehensive.','The Q&A pages in the course are littered with people complaining that if you are using a Mac you are unable to install the required programs. This means you are not able to complete the third section of the course. Despite these complaints being months/years old, the creators of this course have still not updated the Requirements page. I find it incredibly misleading that the creators of the course are unwilling to make clear the hardware requirements of their course.','Did not specify this course is not compatible with Mac.', 'Not very practical.','NO Video, only audio, I have old XP computer, all other Udemy courses work fine.','poor buffering speed'],
+            'name':'Complete DataScience with Python and Tensorflow'
         }
-    else:    
-        data = { 'reviews':,
-            'name':''
+    elif(course == 'course3'):    
+        data = { 'reviews':['Too much unnecessary talks, needs lot of editing to remove it. Probably 21 hours content be reduced to less than 10 hours. Hard to focus when you constantly have to filter out more than half of the things someone is saying','Expected more information like some lecture about hadoop, sparks etc. For getting data science required lots of knowledge about statistics as well as algorithms. Lot of things required to be added in this course so that anyone can apply for data science jobs. Thanks','This is the best course l have ever done, however l need the notes. where can l download them?','Good course, unfortunately they forgot to mention that the programs that about 1/4 of the course rely on are not available for mac.','In a number of occasions small things was explained repeated in a circle before moving on to the next point.'],
+            'name':'Data science master course'
         }
     
-    return data
+    return jsonify(data)
 
+
+androidJavaMasterClass= ['This course works well','Its awesome','Not a great course','works bad','getting bored lately']
+androidOnJava = ['Unfortunately I and a few others have gotten a point in this course where a big issue arises in one of the apps and the instructor no longer responds to questions to aid with this issue','The updated/ newer versions of android studio or other services should be used in the tutorials and possible errors and their solutions should be mentioned in the same.','Overall good course. I would prefer if it was going deeper into Android Studio and Development,but good insight was provided into marketing and launching the app and all the tricks.','I enjoyed the experience of learning both android programming and thinking programmatically from you guys','This course is amazingly immersive and quite all-inclusive from end-to-end to develop an app!'],
 
 
 
