@@ -11,7 +11,7 @@ app = Flask(__name__)
 def index():
     return "Hello world"
 
-@app.route('/ml',methods=['GET'])
+@app.route('/ml',methods=['POST'])
 def reviewsMl():
     gotData = request.json
     course = gotData['course']
@@ -33,7 +33,7 @@ def reviewsMl():
 
 
 
-@app.route('/android',methods=['GET'])
+@app.route('/android',methods=['POST'])
 def reviewsAnd():
     gotData = request.json
     course = gotData['course']
@@ -56,7 +56,7 @@ def reviewsAnd():
 
 
 
-@app.route('/web',methods=['GET'])
+@app.route('/web',methods=['POST'])
 def reviewsWeb():
     gotData = request.json
     course = gotData['course']
