@@ -1,5 +1,9 @@
 var request = require('request');
 
+var review_arr = []
+var positivity_arr = []
+var keywords_arr = []
+
 request.post(
     'http://c3c413be.ngrok.io/ds',
     { json: { course: 'course1' } },
@@ -26,12 +30,16 @@ request.post(
                             else{
                                 positivity_analysis = "No"
                             }
-                            
+                           positivity_arr.push(positivity_analysis)
+                           review_arr.push(review)
+                           keywords_arr.push(keywords);
                         }
                     }
                 );
             }
         }
+        
     }
 );
 
+console.log(positivity_arr)
