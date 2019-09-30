@@ -4,7 +4,8 @@ To contribute edit the following files and send a pr.
 
 
 ### Files you can edit:
-1. data.py
+1. data.py : Add more data(`on the way to create a huge dataset  ;-)`)
 2. .html files
+3. .css files
 
 > Happy Hacking!!!
