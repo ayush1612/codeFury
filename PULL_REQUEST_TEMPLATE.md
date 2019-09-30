@@ -4,4 +4,4 @@
 # I ensure that I added the following:
  - [ ] Made significant changes
  - [ ] Starred the repository
- 
+ - [ ] Add your name along with your github profile in `CONTRIBUTING.md`
