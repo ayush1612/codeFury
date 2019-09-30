@@ -1,4 +1,4 @@
-
+# I Love HactoberFest
 from flask import Flask, render_template,request,url_for,jsonify
 from flask_bootstrap import Bootstrap; 
 from textblob import TextBlob,Word;
