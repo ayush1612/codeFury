@@ -5,6 +5,7 @@ To contribute edit the following files and send a pr.
 
 1. Register at HacktoberFest
 2. Make 4 pull requests.
+3. Check ur progress.
 
 
 ### Files you can edit:
@@ -13,4 +14,3 @@ To contribute edit the following files and send a pr.
 3. .css files
 
 > Happy Hacking!!!
-
