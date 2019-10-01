@@ -22,4 +22,4 @@ To contribute edit the following files and send a pr.
 2. .html files
 3. .css files
 
-> Happy Hacking!!!
+# Happy Hacking!!! :zap: :smile:
