@@ -1,3 +1,5 @@
+<img src="https://img.shields.io/badge/hacktober-hacktoberFest-green">  <img src="https://img.shields.io/github/issues-pr-raw/ayush1612/codeFury?style=for-the-badge">  ![GitHub](https://img.shields.io/github/license/ayush1612/codeFury)  <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/ayush1612/codeFury?style=for-the-badge">  <img alt="GitHub issues" src="https://img.shields.io/github/issues/ayush1612/codeFury?color=red&style=plastic">
+
 
 # codeFury
 ## Project made for codeFury Hackathon
