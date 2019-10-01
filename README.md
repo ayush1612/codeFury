@@ -12,6 +12,7 @@ This repo deals with the data related to courses on which sentiment analysis is 
 To contribute edit the following files and send a pr.
 
 <br>
+
 ```
 1. Register at HacktoberFest
 2. Make 4 pull requests.
