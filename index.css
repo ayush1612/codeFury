@@ -1,4 +1,15 @@
-.body{
-    margin=0;
-    border=0;
+
+h1 {
+    text-align: center;
+    padding: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 20px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    
 }
