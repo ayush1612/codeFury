@@ -1,4 +1,7 @@
 
+body {
+    background: black;
+}
 h1 {
     text-align: center;
     padding: 30px;
@@ -13,3 +16,9 @@ a {
     color: rgb(255, 255, 255);
     
 }
+
+.jumbotron {
+    background: rgb(5, 44, 56);
+    color: aliceblue;
+}
+
