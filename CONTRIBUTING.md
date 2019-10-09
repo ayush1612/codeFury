@@ -10,4 +10,3 @@
 8. [Saba](https://github.com/saba-d-coder)
 9. [Bishal](https://github.com/bluesaiyancodes)
 10. [Sarvesh1523](https://github.com/Sarvesh1523)
-11. [Aayush](https://github.com/aayushsaini1)
