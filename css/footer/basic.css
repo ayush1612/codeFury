@@ -1,0 +1,11 @@
+.container2 > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: #ffeead;
+}
+
+.container2 > div:nth-child(1n){
+    background-color: #000000;
+}

@@ -1,0 +1,33 @@
+.container > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
+}
+/*html, body{
+    background-color: white;
+    margin: 0px;
+}*/
+.container > div:nth-child(1n){
+background-color: white;
+}
+.container > div:nth-child(2n){
+    background-color: white;
+}
+.container > div:nth-child(3n){
+    background-color: white;
+}
+.container > div:nth-child(4n){
+    background-color: white;
+}
+.komen{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 23;
+    text-align: left;
+}
+.isi{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 18;
+    text-align: justify;
+}
