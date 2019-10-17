@@ -1,46 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-	<title>Android Courses</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Android Courses</title>
+<!-- JAVASCRIPT CDN -->
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!-- jQUERY CDN-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<!-- BOOTSTRAP CDN -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<!-- STYLESHEET -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:900&display=swap" rel="stylesheet">
 </head>
 
+<!-- STYLING STARTS HERE -->
 <style type="text/css">
-	.card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-}
+  h1{
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-weight: 500;
+    color: #8bc34a; 
+    position: relative;
+    left: 2rem;
+  }
 
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
+  h4{
+    font-family: 'Lato', sans-serif;
+    color:#558b2f; 
+    font-weight: 500;
+    text-align: center;
+  }
 
-/* Add some padding inside the card container */
-.container {
-  padding: 2px 16px;
-}
+  p{
+    font-family: 'Lato', sans-serif;
+    color:#8bc34a; 
+    font-weight: 500;
+    text-align: center;
+  }
+  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+  }
+
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  /* Add some padding inside the card container */
+  .container {
+    padding: 4rem 3rem;
+  }
+
+  .row{
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -23rem;
+    margin-top: 5rem;
+  }
+
+  .Android-4{
+    width: 21rem;
+    height: 12rem;
+    border-radius: 3px;
+  }
+
+  .Android-1{
+    width: 7rem;
+    position: relative;
+    bottom: 6rem;
+    margin-bottom: -5rem;
+  }
+
+  .Android-3{
+    width: 21rem;
+    height: 12rem;
+    border-radius: 3px;
+  }
+
+  .Android-2{
+    width: 21rem;
+    height: 12rem;
+    border-radius: 3px;
+  }
 </style>
 
+<!-- BODY SECTION -->
 <body class="container">
   <h1>The list of top android courses:</h1>
+  <img class="Android-1" src="docs/img/android.png" alt="Image">
   
 <div class="row">
-
+<!-- FIRST CARD -->
 <div id = "1" class="column" style="float: left; width: 25%; padding: 0 10px;">  
 <div class="card">
-  <img src="docs/img/Android-4.png" alt="Avatar" style="width:20% ; height: 20%">
+  <img class="Android-4" src="docs/img/Android-4.png" alt="Avatar">
   <div class="container">
-    <h4><b>Android Course BootCamp</b></h4>
+    <h4>Android Course BootCamp</h4>
     <p>10,982 views</p>
-    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1">Check Stats</button>
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1" style="position: relative; left: 3.5rem; font-size: 1.2rem; font-family: 'Lato', sans-serif;">Check Stats</button>
   </div>
   </div>
 </div>
@@ -48,11 +114,11 @@
 
 <div id = "2" class="column" style="float: left; width: 25%; padding: 0 10px;">
   <div class="card">
-  <img src="docs/img/ailt-splash.png" alt="Avatar" style="width:20% ; height: 20%">
+  <img class="Android-3" src="docs/img/ailt-splash.png" alt="Avatar">
   <div class="container">
     <h4><b>Android Course BootCamp</b></h4>
     <p>10,982 views</p>
-    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2">Check Stats</button>
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2" style="position: relative; left: 3.5rem; font-size: 1.2rem; font-family: 'Lato', sans-serif;">Check Stats</button>
 </div>
   </div>
 </div>
@@ -60,11 +126,11 @@
 
 <div id = "3" class="column" style="float: left; width: 25%; padding: 0 10px;">
   <div class="card">
-  <img src="docs/img/android2.jpg" alt="Avatar" style="width:20% ; height: 20%">
+  <img class="Android-2" src="docs/img/android2.jpg" alt="Avatar">
   <div class="container">
     <h4><b>Android Course BootCamp</b></h4>
     <p>10,982 views</p>
-    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo3">Check Stats</button>
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo3" style="position: relative; left: 3.5rem; font-size: 1.2rem; font-family: 'Lato', sans-serif;">Check Stats</button>
 </div>
 </div>
 </div>
