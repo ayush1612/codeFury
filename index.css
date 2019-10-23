@@ -1,29 +1,29 @@
 
 body {
-    background: black;
+    background: linear-gradient(to bottom, #000000 0%, #303030 100%);
 }
 h1 {
-    color: white;
+    color: #FFFFFF;
     text-align: center;
-    padding: 30px;
+    padding: 29px;
 }
 
 .btn {
     text-decoration: none;
-    padding: 20px;
+    padding: 21px;
 }
 
 a {
-    color: rgb(255, 255, 255);
+    color: rgb(254, 255, 253);
     
 }
 
 
 marquee{
-    font-size: 25px;
+    font-size: 26px;
     color : whitesmoke;
-    padding-top : -20px;
-    padding-bottom : 10px;
+    padding-top : -21px;
+    padding-bottom : 11px;
 }
 
 body{
@@ -32,7 +32,7 @@ body{
 
 .jumbotron {
     position: relative;
-    background: rgb(5, 44, 56);
+    background: rgb(6, 45, 57);
     color: aliceblue;
     background-image: url('/docs/img/showcase-image.jpg');
     background-size: cover;
@@ -42,10 +42,11 @@ body{
 #logo {
     width: 100px;
     background-size: cover;
+    box-shadow: 3px 7px #606060;
 }
 
 .card-deck {
-    padding: 50px;
+    padding: 51px;
 }
 
 .overlay {
